@@ -25,7 +25,6 @@ const courseStore = useCourseStore()
     try {
       isLoading.value = true
       error.value = null
-
       const response = await fetch(`${import.meta.env.VITE_API_URL}/auth/jwt/create/`, {
         method: 'POST',
         mode: 'cors',
